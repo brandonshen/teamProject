@@ -9,12 +9,11 @@ import { FeedPage } from '../feed/feed';
 export class HomePage {
 
   constructor(public navCtrl: NavController) {
-
+    console.log("Home page instantiated");
   }
 
   goToFeedPage(){
     this.navCtrl.setRoot(FeedPage);
-
   }
 
 }
