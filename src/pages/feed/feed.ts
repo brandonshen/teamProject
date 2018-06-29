@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { FormsPage } from '../forms/forms';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the FeedPage page.
@@ -22,4 +24,12 @@ export class FeedPage {
     console.log('ionViewDidLoad FeedPage');
   }
 
+  goToFormsPage(){
+    this.navCtrl.setRoot(FormsPage);
+
+  }
+
+  goToHomePage(){
+    this.navCtrl.setRoot(HomePage);
+  }
 }
