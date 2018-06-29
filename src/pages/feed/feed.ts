@@ -26,7 +26,6 @@ export class FeedPage {
 
   goToFormsPage(){
     this.navCtrl.setRoot(FormsPage);
-
   }
 
   goToHomePage(){

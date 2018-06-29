@@ -33,4 +33,8 @@ export class FormsPage {
     this.navCtrl.setRoot(HomePage);
   }
 
+  gotoFormsPage(){
+    this.navCtrl.setRoot(FormsPage);
+  }
+
 }

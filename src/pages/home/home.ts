@@ -17,9 +17,12 @@ export class HomePage {
     this.navCtrl.setRoot(FeedPage);
 
   }
-
   goToFormsPage(){
     this.navCtrl.setRoot(FormsPage);
+  }
+
+  goToHomePage(){
+    this.navCtrl.setRoot(HomePage);
   }
 
 }
