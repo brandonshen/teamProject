@@ -1,4 +1,10 @@
 import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { FeedPage } from '../../pages/feed/feed';
+import { FormsPage } from '../../pages/forms/forms';
+import { HomePage } from '../../pages/home/home';
+
+
 
 /**
  * Generated class for the FooterComponent component.
@@ -14,8 +20,18 @@ export class FooterComponent {
 
   text: string;
   
-  constructor() {
+  constructor(public navCtrl: NavController) {
     console.log('Hello FooterComponent Component');
+  }
+  goToFeedPage(){
+    this.navCtrl.setRoot(FeedPage);
+  }
+  goToFormsPage(){
+    this.navCtrl.setRoot(FormsPage);
+  }
+
+  goToHomePage(){
+    this.navCtrl.setRoot(HomePage);
   }
 
 }
