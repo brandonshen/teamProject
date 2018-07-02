@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { FooterComponent } from './footer/footer';
+import { RedComponent } from './red/red';
 @NgModule({
-	declarations: [FooterComponent],
+	declarations: [FooterComponent,
+    RedComponent],
 	imports: [],
-	exports: [FooterComponent]
+	exports: [FooterComponent,
+    RedComponent]
 })
 export class ComponentsModule {}

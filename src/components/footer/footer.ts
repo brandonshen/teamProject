@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
  */
 @Component({
   selector: 'footer',
-  templateUrl: 'footer.html'
+  templateUrl: 'footer.html',
 })
 export class FooterComponent {
 
