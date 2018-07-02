@@ -7,24 +7,27 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { FeedPage } from '../pages/feed/feed';
+import { FormsPage } from '../pages/forms/forms';
 import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    FeedPage
+    FeedPage,
+    FormsPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    ComponentsModule,
+    ComponentsModule  
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    FeedPage
+    FeedPage,
+    FormsPage
   ],
   providers: [
     StatusBar,
