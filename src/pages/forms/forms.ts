@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { FormsPage } from '../forms/forms';
+import { FeedPage } from '../feed/feed';
 import { HomePage } from '../home/home';
 
 /**
- * Generated class for the FeedPage page.
+ * Generated class for the FormsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,19 +12,28 @@ import { HomePage } from '../home/home';
 
 @IonicPage()
 @Component({
-  selector: 'page-feed',
-  templateUrl: 'feed.html',
+  selector: 'page-forms',
+  templateUrl: 'forms.html',
 })
-export class FeedPage {
+export class FormsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-  goToHomePage(){
-    this.navCtrl.setRoot(HomePage);
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad FormsPage');
+  }
+
+  goToFeedPage(){
+    this.navCtrl.setRoot(FeedPage);
 
   }
 
-  goToFormsPage(){
+  goToHomePage(){
+    this.navCtrl.setRoot(HomePage);
+  }
+
+  gotoFormsPage(){
     this.navCtrl.setRoot(FormsPage);
   }
 
