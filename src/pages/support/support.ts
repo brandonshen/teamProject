@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { FeedPage } from '../feed/feed';
+import { FormsPage } from '../forms/forms';
 import { HomePage } from '../home/home';
-import { SupportPage } from '../support/support';
 
 /**
- * Generated class for the FormsPage page.
+ * Generated class for the SupportPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -13,32 +13,31 @@ import { SupportPage } from '../support/support';
 
 @IonicPage()
 @Component({
-  selector: 'page-forms',
-  templateUrl: 'forms.html',
+  selector: 'page-support',
+  templateUrl: 'support.html',
 })
-export class FormsPage {
+export class SupportPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad FormsPage');
+    console.log('ionViewDidLoad SupportPage');
   }
 
   goToFeedPage(){
     this.navCtrl.setRoot(FeedPage);
 
   }
+  goToFormsPage(){
+    this.navCtrl.setRoot(FormsPage);
+  }
 
   goToHomePage(){
     this.navCtrl.setRoot(HomePage);
   }
 
-  gotoFormsPage(){
-    this.navCtrl.setRoot(FormsPage);
-  }
-
-  GoToSupportPage(){
+  goToSupportPage(){
     this.navCtrl.setRoot(SupportPage);
   }
 }

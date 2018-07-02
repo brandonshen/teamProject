@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { FormsPage } from '../forms/forms';
 import { HomePage } from '../home/home';
+import { SupportPage } from '../support/support';
 
 /**
  * Generated class for the FeedPage page.
@@ -30,5 +31,13 @@ export class FeedPage {
 
   goToHomePage(){
     this.navCtrl.setRoot(HomePage);
+  }
+
+  GoToFeedPage(){
+    this.navCtrl.setRoot(HomePage);
+  }
+
+  GoToSupportPage(){
+    this.navCtrl.setRoot(SupportPage);
   }
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FeedPage } from '../feed/feed';
 import { FormsPage } from '../forms/forms';
+import { SupportPage } from '../support/support';
 
 @Component({
   selector: 'page-home',
@@ -25,4 +26,7 @@ export class HomePage {
     this.navCtrl.setRoot(HomePage);
   }
 
+  goToSupportPage(){
+    this.navCtrl.setRoot(SupportPage);
+  }
 }
