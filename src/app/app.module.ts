@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { FeedPage } from '../pages/feed/feed';
 import { FormsPage } from '../pages/forms/forms';
 import { SupportPage } from '../pages/support/support';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SupportPage } from '../pages/support/support';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ComponentsModule  
   ],
   bootstrap: [IonicApp],
   entryComponents: [

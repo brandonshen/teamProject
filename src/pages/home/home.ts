@@ -11,12 +11,7 @@ import { SupportPage } from '../support/support';
 export class HomePage {
 
   constructor(public navCtrl: NavController) {
-
-  }
-
-  goToFeedPage(){
-    this.navCtrl.setRoot(FeedPage);
-
+    console.log("Home page instantiated");
   }
   goToFormsPage(){
     this.navCtrl.setRoot(FormsPage);

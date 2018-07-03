@@ -4,6 +4,7 @@ import { FeedPage } from '../feed/feed';
 import { FormsPage } from '../forms/forms';
 import { HomePage } from '../home/home';
 
+
 /**
  * Generated class for the SupportPage page.
  *

@@ -1,11 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { FeedPage } from '../feed/feed';
-import { HomePage } from '../home/home';
-import { SupportPage } from '../support/support';
 
 /**
- * Generated class for the FormsPage page.
+ * Generated class for the ProductsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -13,21 +10,16 @@ import { SupportPage } from '../support/support';
 
 @IonicPage()
 @Component({
-  selector: 'page-forms',
-  templateUrl: 'forms.html',
+  selector: 'page-products',
+  templateUrl: 'products.html',
 })
-export class FormsPage {
+export class ProductsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad FormsPage');
+    console.log('ionViewDidLoad ProductsPage');
   }
 
-
-
-  GoToSupportPage(){
-    this.navCtrl.setRoot(SupportPage);
-  }
 }
