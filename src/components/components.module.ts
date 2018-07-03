@@ -1,17 +1,14 @@
 import { NgModule } from '@angular/core';
 import { FooterComponent } from './footer/footer';
 import { RedComponent } from './red/red';
-import { ScrollComponent } from './scroll/scroll';
-import { ScrollnewComponent } from './scrollnew/scrollnew';
+import { HeaderComponent } from './header/header';
 @NgModule({
 	declarations: [FooterComponent,
     RedComponent,
-    ScrollComponent,
-    ScrollnewComponent],
+    HeaderComponent],
 	imports: [],
 	exports: [FooterComponent,
     RedComponent,
-    ScrollComponent,
-    ScrollnewComponent]
+    HeaderComponent]
 })
 export class ComponentsModule {}
