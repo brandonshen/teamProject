@@ -9,12 +9,15 @@ import { HomePage } from '../pages/home/home';
 import { FeedPage } from '../pages/feed/feed';
 import { FormsPage } from '../pages/forms/forms';
 import { ComponentsModule } from '../components/components.module';
+import { MessagesPage } from '../pages/messages/messages';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    FeedPage
+    FeedPage,
+    FormsPage,
+    MessagesPage,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,9 @@ import { ComponentsModule } from '../components/components.module';
   entryComponents: [
     MyApp,
     HomePage,
-    FeedPage
+    FeedPage,
+    FormsPage,
+    MessagesPage,
   ],
   providers: [
     StatusBar,

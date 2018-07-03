@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { FooterComponent } from './footer/footer';
 import { RedComponent } from './red/red';
+import { ScrollComponent } from './scroll/scroll';
 @NgModule({
 	declarations: [FooterComponent,
-    RedComponent],
+    RedComponent,
+    ScrollComponent],
 	imports: [],
 	exports: [FooterComponent,
-    RedComponent]
+    RedComponent,
+    ScrollComponent]
 })
 export class ComponentsModule {}
