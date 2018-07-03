@@ -27,7 +27,7 @@ page-feed {
             height: 2px;
             background-color: gray;
         }
-        #title{
+        #title2{
             width: 100%;
             height:50px;
             display: flex;
@@ -36,7 +36,7 @@ page-feed {
             width: 75%;
             height: 100%;
             display: flex;
-          
+          justify-content: center;
           align-items: center;
         }
         .title_rec {
@@ -46,9 +46,7 @@ page-feed {
           justify-content: center;
           align-items: center;
         }
-        #feedtext{
-            padding-left: 10%;
-        }
+
         #searchbox{
             height:30px;
             width:30px;
