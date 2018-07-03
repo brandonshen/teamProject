@@ -17,6 +17,24 @@ html{
         justify-content: center;
         align-items: center;
     }
+    #profilebox{
+        width: 30%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; 
+    }
+    #spacebox{
+        width:25%;
+        height: 70px;
+    }
+    #textbox{
+        width: 45%;
+        height: 70px;
+        display: Flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
     #divider_box{
         width: 100%;
         height: 3px;
@@ -51,8 +69,6 @@ html{
         border-radius: 100px;
         }
     #title{
-       padding-left: 150px;  
-       padding-top: 25px;
        font-family: sans-serif;
     }
     #rows{
