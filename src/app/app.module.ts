@@ -10,6 +10,7 @@ import { FeedPage } from '../pages/feed/feed';
 import { FormsPage } from '../pages/forms/forms';
 import { SupportPage } from '../pages/support/support';
 import { ComponentsModule } from '../components/components.module';
+import { ProductsPilotPage } from '../pages/products-pilot/products-pilot';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ComponentsModule } from '../components/components.module';
     HomePage,
     FeedPage,
     FormsPage,
-    SupportPage
+    SupportPage,
+    ProductsPilotPage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { ComponentsModule } from '../components/components.module';
     HomePage,
     FeedPage,
     FormsPage,
-    SupportPage
+    SupportPage,
+    ProductsPilotPage
   ],
   providers: [
     StatusBar,
