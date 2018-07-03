@@ -67,8 +67,13 @@ page-products-pilot {
         height: 30%;
         /*border: 1px solid black;*/
         border-radius: 5%;
-        background-color: lightgray;
+        background-color: #ea4e10;
         border: 1px solid black;
+        justify-content: center;
+        display:flex;
+        align-items:center;
+        font-size:38px;
+        color:white;
     }
     .row2{
         width: 350px;

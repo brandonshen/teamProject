@@ -25,9 +25,4 @@ export class FormsPage {
     console.log('ionViewDidLoad FormsPage');
   }
 
-
-
-  GoToSupportPage(){
-    this.navCtrl.setRoot(SupportPage);
-  }
 }

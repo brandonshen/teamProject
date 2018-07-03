@@ -25,19 +25,4 @@ export class FeedPage {
     console.log('ionViewDidLoad FeedPage');
   }
 
-  goToFormsPage(){
-    this.navCtrl.setRoot(FormsPage);
-  }
-
-  goToHomePage(){
-    this.navCtrl.setRoot(HomePage);
-  }
-
-  GoToFeedPage(){
-    this.navCtrl.setRoot(HomePage);
-  }
-
-  GoToSupportPage(){
-    this.navCtrl.setRoot(SupportPage);
-  }
 }

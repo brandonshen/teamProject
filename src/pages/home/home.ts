@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { FeedPage } from '../feed/feed';
 import { FormsPage } from '../forms/forms';
 import { SupportPage } from '../support/support';
+import { ProductsPilotPage } from '../products-pilot/products-pilot';
 
 @Component({
   selector: 'page-home',
@@ -13,15 +14,10 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
     console.log("Home page instantiated");
   }
-  goToFormsPage(){
-    this.navCtrl.setRoot(FormsPage);
+  
+  goToProductsPilotPage(){
+    this.navCtrl.setRoot(ProductsPilotPage);
   }
+  }
+ 
 
-  goToHomePage(){
-    this.navCtrl.setRoot(HomePage);
-  }
-
-  goToSupportPage(){
-    this.navCtrl.setRoot(SupportPage);
-  }
-}
