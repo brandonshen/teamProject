@@ -3,7 +3,6 @@ import { NavController } from 'ionic-angular';
 import { FeedPage } from '../../pages/feed/feed';
 import { FormsPage } from '../../pages/forms/forms';
 import { HomePage } from '../../pages/home/home';
-import { SupportPage } from '../../pages/support/support';
 
 
 
@@ -24,19 +23,16 @@ export class FooterComponent {
   constructor(public navCtrl: NavController) {
     console.log('Hello FooterComponent Component');
   }
+
   goToFeedPage(){
-    this.navCtrl.setRoot(FeedPage);
+    this.navCtrl.push(FeedPage,{},{animate: true, direction: 'back'});
   }
   goToFormsPage(){
-    this.navCtrl.setRoot(FormsPage);
+    this.navCtrl.push(FormsPage,{},{animate: true, direction: 'forward'});
   }
 
   goToHomePage(){
     this.navCtrl.setRoot(HomePage);
-  }
-
-  goToSupportPage(){
-    this.navCtrl.setRoot(SupportPage);
   }
 
 }
