@@ -1,5 +1,5 @@
-scroll {
-    .row{
+scroll-item {
+    .row_comp{
         width: 100%;
         height: 12.5%;
         display: flex;
@@ -7,8 +7,14 @@ scroll {
         align-items: center;
         align-content: center;
     }
-    .row_line{
+    .row_line_comp{
         width: 80%;
         height: 1px;
+    }
+    .row_line_container{
+        width: 100%;
+        height: 1px;
+        display: flex;
+        justify-content: center;
     }
 }

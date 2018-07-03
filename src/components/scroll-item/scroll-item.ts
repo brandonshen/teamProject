@@ -1,21 +1,21 @@
 import { Component } from '@angular/core';
 
 /**
- * Generated class for the ScrollComponent component.
+ * Generated class for the ScrollItemComponent component.
  *
  * See https://angular.io/api/core/Component for more info on Angular
  * Components.
  */
 @Component({
-  selector: 'scroll',
-  templateUrl: 'scroll.html'
+  selector: 'scroll-item',
+  templateUrl: 'scroll-item.html'
 })
-export class ScrollComponent {
+export class ScrollItemComponent {
 
   text: string;
 
   constructor() {
-    console.log('Hello ScrollComponent Component');
+    console.log('Hello ScrollItemComponent Component');
     this.text = 'Hello World';
   }
 
