@@ -32,23 +32,32 @@ page-feed {
             height:50px;
             display: flex;
         }
-
+        .title_rec1{
+            width: 75%;
+            height: 100%;
+            display: flex;
+          
+          align-items: center;
+        }
         .title_rec {
           width: 25%;
           height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
         #feedtext{
             padding-left: 10%;
         }
         #searchbox{
-            height:45px;
-            width:45px;
+            height:30px;
+            width:30px;
         
             
         }
         #searchimage{
-            height:45px;
-            width:45px;
+            height:30px;
+            width:30px;
             
         }
         #arrowbox{
@@ -79,7 +88,7 @@ page-feed {
         }
         #rows{
             width: 100%;
-            height: calc(100% - 260px)    ;
+            height: calc(100% - 200px)    ;
             display: flex;
             justify-content: center;
            /* align-items: center;*/
