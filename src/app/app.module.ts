@@ -11,6 +11,7 @@ import { FormsPage } from '../pages/forms/forms';
 import { SupportPage } from '../pages/support/support';
 import { ComponentsModule } from '../components/components.module';
 import { ProductsPilotPage } from '../pages/products-pilot/products-pilot';
+import { TicketPage } from '../pages/ticket/ticket';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProductsPilotPage } from '../pages/products-pilot/products-pilot';
     FeedPage,
     FormsPage,
     SupportPage,
-    ProductsPilotPage
+    ProductsPilotPage,
+    TicketPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ import { ProductsPilotPage } from '../pages/products-pilot/products-pilot';
     FeedPage,
     FormsPage,
     SupportPage,
-    ProductsPilotPage
+    ProductsPilotPage,
+    TicketPage
   ],
   providers: [
     StatusBar,
