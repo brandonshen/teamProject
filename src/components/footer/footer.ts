@@ -24,11 +24,12 @@ export class FooterComponent {
   constructor(public navCtrl: NavController) {
     console.log('Hello FooterComponent Component');
   }
+
   goToFeedPage(){
-    this.navCtrl.setRoot(FeedPage);
+    this.navCtrl.push(FeedPage,{},{animate: true, direction: 'back'});
   }
   goToFormsPage(){
-    this.navCtrl.setRoot(FormsPage);
+    this.navCtrl.push(FormsPage,{},{animate: true, direction: 'forward'});
   }
   goToHomePage(){
     this.navCtrl.setRoot(HomePage);

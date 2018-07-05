@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { FeedPage } from '../feed/feed';
+import { HomePage } from '../home/home';
+import { SupportPage } from '../support/support';
+
 /**
  * Generated class for the FormsPage page.
  *
@@ -20,7 +24,5 @@ export class FormsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad FormsPage');
   }
-
-
 
 }

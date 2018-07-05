@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { FeedPage } from '../feed/feed';
+import { FormsPage } from '../forms/forms';
+import { SupportPage } from '../support/support';
+import { ProductsPilotPage } from '../products-pilot/products-pilot';
 
 @Component({
   selector: 'page-home',
@@ -12,4 +16,10 @@ export class HomePage {
     console.log("Home page instantiated");
     this.title=" Products ";
   }
-}
+  
+  goToProductsPilotPage(){
+    this.navCtrl.setRoot(ProductsPilotPage);
+  }
+  }
+ 
+
