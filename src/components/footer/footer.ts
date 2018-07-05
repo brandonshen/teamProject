@@ -4,6 +4,7 @@ import { FeedPage } from '../../pages/feed/feed';
 import { FormsPage } from '../../pages/forms/forms';
 import { HomePage } from '../../pages/home/home';
 import { MessagesPage } from '../../pages/messages/messages';
+import { SupportPage } from '../../pages/support/support'
 
 
 
@@ -30,6 +31,9 @@ export class FooterComponent {
   }
   goToFormsPage(){
     this.navCtrl.push(FormsPage,{},{animate: true, direction: 'forward'});
+  }
+  goToSupportPage(){
+    this.navCtrl.push(SupportPage,{},{animate: true, direction: 'forward'});
   }
   goToHomePage(){
     this.navCtrl.setRoot(HomePage);
