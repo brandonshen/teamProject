@@ -32,7 +32,7 @@ export class FooterComponent {
   }
 
   goToHomePage(){
-    this.navCtrl.setRoot(HomePage);
+    this.navCtrl.push(HomePage,{},{animate: true, direction: 'forward'});
   }
 
 }
