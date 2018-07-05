@@ -14,8 +14,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'messages.html',
 })
 export class MessagesPage {
+  public listOfMessages : Array<number> = new Array(80);
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    
   }
 
   ionViewDidLoad() {

@@ -14,6 +14,7 @@ import { PilotComponent } from './pilot/pilot';
 	exports: [FooterComponent,
     RedComponent,
     HeaderComponent,
+    ScrollItemComponent,
     PilotComponent]
 })
 export class ComponentsModule {}

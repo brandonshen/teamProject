@@ -30,7 +30,13 @@
         <img src="../../assets/icon/Icons/Header/backarrow.png" id="arrowimage">
     </div>
     <div id="rows_container">
-        <scroll-item>
+        <scroll-item [supportTitle]="'Ticket'" [supportBody]="'My beans spilled'">
+
+        </scroll-item>
+
+        <scroll-item *ngFor="let message of listOfMessages">
+        </scroll-item>
+        <!-- <scroll-item>
 
         </scroll-item>
         <scroll-item>
@@ -51,9 +57,14 @@
         <scroll-item>
 
         </scroll-item>
+
         <scroll-item>
 
         </scroll-item>
+        <scroll-item>
+
+        </scroll-item> -->
+
     </div>
      <footer></footer>
 </div>

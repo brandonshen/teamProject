@@ -10,6 +10,7 @@ import { FeedPage } from '../pages/feed/feed';
 import { FormsPage } from '../pages/forms/forms';
 import { ComponentsModule } from '../components/components.module';
 import { MessagesPage } from '../pages/messages/messages';
+import { SupportPage } from '../pages/support/support';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { MessagesPage } from '../pages/messages/messages';
     FeedPage,
     FormsPage,
     MessagesPage,
+    SupportPage,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +33,7 @@ import { MessagesPage } from '../pages/messages/messages';
     FeedPage,
     FormsPage,
     MessagesPage,
+    SupportPage,
   ],
   providers: [
     StatusBar,

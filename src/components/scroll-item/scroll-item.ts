@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 /**
  * Generated class for the ScrollItemComponent component.
@@ -11,6 +11,8 @@ import { Component } from '@angular/core';
   templateUrl: 'scroll-item.html'
 })
 export class ScrollItemComponent {
+  @Input() supportTitle : string;
+  @Input() supportBody : string;
 
   text: string;
 

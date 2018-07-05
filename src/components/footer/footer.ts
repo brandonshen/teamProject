@@ -36,10 +36,10 @@ export class FooterComponent {
     this.navCtrl.push(SupportPage,{},{animate: true, direction: 'forward'});
   }
   goToHomePage(){
-    this.navCtrl.setRoot(HomePage);
+    this.navCtrl.setRoot(HomePage,{},{animate: true, direction: 'forward'});
   }
   goToMessagesPage(){
-    this.navCtrl.setRoot(MessagesPage);
+    this.navCtrl.setRoot(MessagesPage,{},{animate: true, direction: 'forward'});
   }
 
 }

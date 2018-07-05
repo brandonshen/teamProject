@@ -37,21 +37,6 @@ html{
         height:50px;
         padding-left:12px;
     }
-    #profile_circle{
-        width: 60px;
-        height: 60px;
-        border-radius: 100px;
-        margin-right: 20px;
-        position: absolute;
-        left: 14px;
-        /*border: 2px solid blue;*/
-    }
-    #profile
-        {
-        width: 60px;
-        height: 60px;
-        border-radius: 100px;
-        }
     #title{
        padding-left: 150px;  
        padding-top: 25px;
@@ -60,6 +45,7 @@ html{
     #rows_container{
         width: 100%;
         height: calc(100% - 210px);
+        overflow-x: hidden;
     }
     .row{
             width: 100%;
