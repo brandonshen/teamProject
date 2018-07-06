@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { PilotxPage } from '../pilotx/pilotx';
+import { Pilot3Page } from '../pilot3/pilot3';
+import { Pilot5Page } from '../pilot5/pilot5';
 
 /**
  * Generated class for the ProductsPilotPage page.
@@ -21,5 +24,13 @@ export class ProductsPilotPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProductsPilotPage');
   }
-
+  goToPilotxPage(){
+    this.navCtrl.setRoot(PilotxPage);
+  }
+  goToPilot3Page(){
+    this.navCtrl.setRoot(Pilot3Page);
+  }
+  goToPilot5Page(){
+    this.navCtrl.setRoot(Pilot5Page);
+  }
 }

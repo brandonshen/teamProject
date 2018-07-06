@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PilotxPage } from '../../pages/pilotx/pilotx';
 
 /**
  * Generated class for the PilotComponent component.
@@ -18,5 +19,4 @@ export class PilotComponent {
     console.log('Hello PilotComponent Component');
     this.text = 'Hello World';
   }
-
 }
