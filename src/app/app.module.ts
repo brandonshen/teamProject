@@ -10,6 +10,7 @@ import { FeedPage } from '../pages/feed/feed';
 import { FormsPage } from '../pages/forms/forms';
 import { ComponentsModule } from '../components/components.module';
 import { ProductsPilotPage } from '../pages/products-pilot/products-pilot';
+import { TicketPage } from '../pages/ticket/ticket';
 import { PilotxPage } from '../pages/pilotx/pilotx';
 import { Pilot3Page } from '../pages/pilot3/pilot3';
 import { Pilot5Page } from '../pages/pilot5/pilot5';
@@ -25,9 +26,11 @@ import { SupportPage } from '../pages/support/support';
     MessagesPage,
     SupportPage,
     ProductsPilotPage,
+    TicketPage
     PilotxPage,
     Pilot3Page,
     Pilot5Page
+    Pilot5Page,
   ],
   imports: [
     BrowserModule,
@@ -43,9 +46,11 @@ import { SupportPage } from '../pages/support/support';
     MessagesPage,
     SupportPage,
     ProductsPilotPage,
+    TicketPage
     PilotxPage,
     Pilot3Page,
     Pilot5Page
+    Pilot5Page,
   ],
   providers: [
     StatusBar,

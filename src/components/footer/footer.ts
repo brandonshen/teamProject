@@ -25,18 +25,18 @@ export class FooterComponent {
     console.log('Hello FooterComponent Component');
   }
   goToFeedPage(){
-    this.navCtrl.setRoot(FeedPage);
+    this.navCtrl.push(FeedPage,{},{animate: true, direction: 'forward'});
   }
   goToFormsPage(){
-    this.navCtrl.setRoot(FormsPage);
+    this.navCtrl.push(FormsPage,{},{animate: true, direction: 'forward'});
   }
-
   goToHomePage(){
     this.navCtrl.setRoot(HomePage);
   }
-
+  goToMessagesPage(){
+    this.navCtrl.setRoot(MessagesPage,{},{animate: true, direction: 'forward'});
+  }   
   goToSupportPage(){
-    this.navCtrl.setRoot(SupportPage);
+    this.navCtrl.push(SupportPage,{},{animate: true, direction: 'forward'});
   }
-
 }
