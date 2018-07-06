@@ -8,12 +8,13 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { FeedPage } from '../pages/feed/feed';
 import { FormsPage } from '../pages/forms/forms';
-import { SupportPage } from '../pages/support/support';
 import { ComponentsModule } from '../components/components.module';
 import { ProductsPilotPage } from '../pages/products-pilot/products-pilot';
 import { PilotxPage } from '../pages/pilotx/pilotx';
 import { Pilot3Page } from '../pages/pilot3/pilot3';
 import { Pilot5Page } from '../pages/pilot5/pilot5';
+import { MessagesPage } from '../pages/messages/messages';
+import { SupportPage } from '../pages/support/support';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { Pilot5Page } from '../pages/pilot5/pilot5';
     HomePage,
     FeedPage,
     FormsPage,
+    MessagesPage,
     SupportPage,
     ProductsPilotPage,
     PilotxPage,
@@ -38,6 +40,7 @@ import { Pilot5Page } from '../pages/pilot5/pilot5';
     HomePage,
     FeedPage,
     FormsPage,
+    MessagesPage,
     SupportPage,
     ProductsPilotPage,
     PilotxPage,

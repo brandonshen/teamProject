@@ -1,0 +1,146 @@
+page-messages {
+
+html{
+        font-family: sans-serif;
+    }
+    #background{
+        width: 100%;
+        height: 100%;
+        border: 2px dotted black;
+    }
+    #header{
+        width: 100%;
+        height: 70px;
+        /*border: 1px solid green;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #divider_box{
+        width: 100%;
+        height: 3px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    #divider{
+        width:90%;
+        height: 2px;
+        background-color: gray;
+    }
+    #arrowbox{
+        width: 50px;
+        height: 50px;
+    }
+    #arrowimage{
+        width:50px;
+        height:50px;
+        padding-left:12px;
+    }
+    #title{
+       padding-left: 150px;  
+       padding-top: 25px;
+       font-family: sans-serif;
+    }
+    #rows_container{
+        width: 100%;
+        height: calc(100% - 210px);
+        overflow-x: hidden;
+    }
+    .row{
+            width: 100%;
+            height: 12.5%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+    }
+    .row_line{
+            width: 80%;
+            height: 1px;
+    }
+    .box{
+       
+        height: 100%;
+        width: 45%;
+        border: 1px solid black;
+        display: flex;
+        border-radius: 25px;
+        box-shadow: 2px 2px 1px grey;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        
+    }
+    .hovercamText{
+        color:white;
+        font-size: 20px;
+    }
+
+    footer{
+      width: 100%;
+      height: 80px;
+    }
+
+    #footer
+    {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right:0;
+        width:100%;
+        height:80px;
+        border: 1px solid black;
+        display: flex;
+    
+        
+    }
+    .circle_container{
+    
+        /* width: 60px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: start; */
+        width: 20%;
+        height: 100%;
+       
+    }
+    .circle_box{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-end;
+        align-items: center;
+       
+    }
+    .label{
+        width:100%;
+        height:30%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        margin: 0px;
+    }
+    .icons{
+        width: 100%;
+        height:100%;
+    }
+    .header_tab{
+        width: 24%;
+        height: 30%;
+        border: 1px solid;
+        border-radius: 2px;
+        border-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

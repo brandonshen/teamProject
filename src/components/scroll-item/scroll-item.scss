@@ -1,0 +1,46 @@
+scroll-item {
+    .row_comp{
+        width: 100%;
+        height: 12.5%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+    }
+    #support_text{
+        width: 90%;
+        height: 100%;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+
+    }
+    #profile_box2{
+        width: 20%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; 
+    }
+    #profile_circle2{
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        /*border: 2px solid blue;*/
+    }
+    #profile2{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    }
+    .row_line_comp{
+        width: 80%;
+        height: 1px;
+    }
+    .row_line_container{
+        width: 100%;
+        height: 1px;
+        display: flex;
+        justify-content: center;
+    }
+}
