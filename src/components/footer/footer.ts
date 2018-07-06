@@ -4,6 +4,7 @@ import { FeedPage } from '../../pages/feed/feed';
 import { FormsPage } from '../../pages/forms/forms';
 import { HomePage } from '../../pages/home/home';
 import { SupportPage } from '../../pages/support/support';
+import { MessagesPage } from '../../pages/messages/messages';
 
 
 

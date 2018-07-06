@@ -26,10 +26,10 @@ import { SupportPage } from '../pages/support/support';
     MessagesPage,
     SupportPage,
     ProductsPilotPage,
-    TicketPage
+    TicketPage,
     PilotxPage,
     Pilot3Page,
-    Pilot5Page
+    Pilot5Page,
     Pilot5Page,
   ],
   imports: [
@@ -46,10 +46,10 @@ import { SupportPage } from '../pages/support/support';
     MessagesPage,
     SupportPage,
     ProductsPilotPage,
-    TicketPage
+    TicketPage,
     PilotxPage,
     Pilot3Page,
-    Pilot5Page
+    Pilot5Page,
     Pilot5Page,
   ],
   providers: [
