@@ -13,6 +13,9 @@ import { MessagesPage } from '../pages/messages/messages';
 import { SupportPage } from '../pages/support/support';
 import { ProductsPilotPage } from '../pages/products-pilot/products-pilot';
 import { TicketPage } from '../pages/ticket/ticket';
+import { PilotxPage } from '../pages/pilotx/pilotx';
+import { Pilot3Page } from '../pages/pilot3/pilot3';
+import { Pilot5Page } from '../pages/pilot5/pilot5';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import { TicketPage } from '../pages/ticket/ticket';
     SupportPage,
     ProductsPilotPage,
     TicketPage
+    PilotxPage,
+    Pilot3Page,
+    Pilot5Page,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +46,9 @@ import { TicketPage } from '../pages/ticket/ticket';
     SupportPage,
     ProductsPilotPage,
     TicketPage
+    PilotxPage,
+    Pilot3Page,
+    Pilot5Page,
   ],
   providers: [
     StatusBar,
