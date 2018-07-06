@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { FeedPage } from '../feed/feed';
 import { FormsPage } from '../forms/forms';
 import { HomePage } from '../home/home';
+import { TicketPage } from '../ticket/ticket';
 
 
 /**
@@ -26,19 +27,7 @@ export class SupportPage {
     console.log('ionViewDidLoad SupportPage');
   }
 
-  goToFeedPage(){
-    this.navCtrl.setRoot(FeedPage);
-
-  }
-  goToFormsPage(){
-    this.navCtrl.setRoot(FormsPage);
-  }
-
-  goToHomePage(){
-    this.navCtrl.setRoot(HomePage);
-  }
-
-  goToSupportPage(){
-    this.navCtrl.setRoot(SupportPage);
+  goToTicketPage(){
+    this.navCtrl.push(TicketPage,{},{animate: true, direction: 'back'});
   }
 }

@@ -11,6 +11,8 @@ import { FormsPage } from '../pages/forms/forms';
 import { ComponentsModule } from '../components/components.module';
 import { MessagesPage } from '../pages/messages/messages';
 import { SupportPage } from '../pages/support/support';
+import { ProductsPilotPage } from '../pages/products-pilot/products-pilot';
+import { TicketPage } from '../pages/ticket/ticket';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { SupportPage } from '../pages/support/support';
     FormsPage,
     MessagesPage,
     SupportPage,
+    ProductsPilotPage,
+    TicketPage
   ],
   imports: [
     BrowserModule,
@@ -34,6 +38,8 @@ import { SupportPage } from '../pages/support/support';
     FormsPage,
     MessagesPage,
     SupportPage,
+    ProductsPilotPage,
+    TicketPage
   ],
   providers: [
     StatusBar,

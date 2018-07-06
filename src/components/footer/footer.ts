@@ -27,19 +27,18 @@ export class FooterComponent {
   }
 
   goToFeedPage(){
-    this.navCtrl.push(FeedPage,{},{animate: true, direction: 'back'});
+    this.navCtrl.push(FeedPage,{},{animate: true, direction: 'forward'});
   }
   goToFormsPage(){
     this.navCtrl.push(FormsPage,{},{animate: true, direction: 'forward'});
-  }
-  goToSupportPage(){
-    this.navCtrl.push(SupportPage,{},{animate: true, direction: 'forward'});
   }
   goToHomePage(){
     this.navCtrl.setRoot(HomePage,{},{animate: true, direction: 'forward'});
   }
   goToMessagesPage(){
     this.navCtrl.setRoot(MessagesPage,{},{animate: true, direction: 'forward'});
+  }   
+  goToSupportPage(){
+    this.navCtrl.push(SupportPage,{},{animate: true, direction: 'forward'});
   }
-
 }
