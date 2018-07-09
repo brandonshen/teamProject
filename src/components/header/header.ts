@@ -13,9 +13,8 @@ import { Component, Input } from '@angular/core';
 export class HeaderComponent {
   @Input() headerTitle : string;
 
-
   constructor() {
-    console.log('Hello HeaderComponent Component');
-  }
+    console.log('Hello HeaderComponent Component'); 
 
+  }
 }

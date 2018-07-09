@@ -1,9 +1,17 @@
 <!-- Generated template for the HeaderComponent component -->
 <div id="header">
     <div id="profilebox">
-        <div id="profile_circle">
-            <img src="../../assets/icon/Icons/Header/avi.png" id="profile">
+        
+        <div id="profile_circle" class= "overlay">
+            <img src="../../assets/icon/Icons/Header/avi.png" id="profile" class="closebutton" onclick="closeNav()">
+            <div class= "overlay-content">
+                About
+                Services
+                Clients
+                Contacts
+            </div>
         </div>
+        <span onclick= "openNav()">open</span>
     </div>
     <div id="spacebox">
     </div>
