@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NotificationsPage } from '../notifications/notifications';
 
 /**
  * Generated class for the MessagesPage page.
@@ -23,5 +24,10 @@ export class MessagesPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad MessagesPage');
   }
-
+  goToMessagesPage(){
+    this.navCtrl.setRoot(MessagesPage,{},{animate: true, direction: 'forward'});
+  }
+  goToNotificationsPage(){
+    this.navCtrl.setRoot(NotificationsPage,{},{animate: true, direction: 'forward'});
+  }
 }

@@ -10,13 +10,13 @@
         <div id="profile_circle">
             <img src="../../assets/icon/Icons/Header/avi.png" id="profile">
         </div>
-        <div class="header_tab" style="background-color:paleturquoise">
-            <p>
+        <div class="header_tab" style="background-color:#91bbff" (click)="goToMessagesPage()">
+            <p id=messages_text>
                 Messages
             </p>
         </div>
-        <div class="header_tab" style="background-color:paleturquoise">
-            <p>
+        <div class="header_tab" (click)="goToNotificationsPage()">
+            <p id=notif_text>
                 Notifications
             </p>
         </div>
