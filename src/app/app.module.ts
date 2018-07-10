@@ -3,7 +3,6 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule, NavController } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { FeedPage } from '../pages/feed/feed';
@@ -16,6 +15,7 @@ import { Pilot3Page } from '../pages/pilot3/pilot3';
 import { Pilot5Page } from '../pages/pilot5/pilot5';
 import { MessagesPage } from '../pages/messages/messages';
 import { SupportPage } from '../pages/support/support';
+import { NotificationsPage } from '../pages/notifications/notifications';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,7 @@ import { SupportPage } from '../pages/support/support';
     PilotxPage,
     Pilot3Page,
     Pilot5Page,
-    Pilot5Page,
+    NotificationsPage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +50,7 @@ import { SupportPage } from '../pages/support/support';
     PilotxPage,
     Pilot3Page,
     Pilot5Page,
-    Pilot5Page,
+    NotificationsPage,
   ],
   providers: [
     StatusBar,
