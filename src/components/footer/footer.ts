@@ -4,6 +4,7 @@ import { FeedPage } from '../../pages/feed/feed';
 import { FormsPage } from '../../pages/forms/forms';
 import { HomePage } from '../../pages/home/home';
 import { SupportPage } from '../../pages/support/support';
+import { MessagesPage } from '../../pages/messages/messages';
 
 
 
@@ -24,17 +25,18 @@ export class FooterComponent {
   constructor(public navCtrl: NavController) {
     console.log('Hello FooterComponent Component');
   }
-
   goToFeedPage(){
     this.navCtrl.push(FeedPage,{},{animate: true, direction: 'forward'});
   }
   goToFormsPage(){
     this.navCtrl.push(FormsPage,{},{animate: true, direction: 'forward'});
   }
-
   goToHomePage(){
-    this.navCtrl.push(HomePage,{},{animate: true, direction: 'forward'});
+    this.navCtrl.setRoot(HomePage);
   }
+  goToMessagesPage(){
+    this.navCtrl.setRoot(MessagesPage,{},{animate: true, direction: 'forward'});
+  }   
   goToSupportPage(){
     this.navCtrl.push(SupportPage,{},{animate: true, direction: 'forward'});
   }

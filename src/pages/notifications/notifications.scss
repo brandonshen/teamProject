@@ -1,5 +1,6 @@
-page-products-pilot {
-    html{
+page-notifications {
+
+html{
         font-family: sans-serif;
     }
     #background{
@@ -29,62 +30,34 @@ page-products-pilot {
     }
     #arrowbox{
         width: 50px;
-        height: 50px;
+        height: 34px;
     }
     #arrowimage{
         width:50px;
         height:50px;
         padding-left:12px;
     }
-    #profile_circle{
-        width: 60px;
-        height: 60px;
-        border-radius: 100px;
-        /*border: 2px solid blue;*/
-    }
-    #profile
-        {
-        width: 60px;
-        height: 60px;
-        border-radius: 100px;
-        }
-    #pagetitle{
+    #title{
        padding-left: 150px;  
        padding-top: 25px;
        font-family: sans-serif;
     }
-    #rows{
+    #rows_container{
         width: 100%;
-        height: calc(100% - 200px)    ;
-        display: flex;
-        justify-content: center;
-       /* align-items: center;*/
-       flex-wrap: wrap;
-       
+        height: calc(100% - 200px);
+        overflow-x: hidden;
     }
     .row{
-        width: 80%;
-        height: 30%;
-        /*border: 1px solid black;*/
-        border-radius: 5%;
-        background-color: #ea4e10;
-        border: 1px solid black;
-        justify-content: center;
-        display:flex;
-        align-items:center;
-        font-size:38px;
-        color:white;
-        cursor: pointer;
+            width: 100%;
+            height: 12.5%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
     }
-    .row2{
-        width: 350px;
-        height: 150px;
-        border: 1px solid black;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        align-content: center;
-        border-radius: 15px;
+    .row_line{
+            width: 80%;
+            height: 1px;
     }
     .box{
        
@@ -105,6 +78,12 @@ page-products-pilot {
         color:white;
         font-size: 20px;
     }
+
+    footer{
+      width: 100%;
+      height: 80px;
+    }
+
     #footer
     {
         position: fixed;
@@ -147,19 +126,28 @@ page-products-pilot {
         justify-content: center;
         align-items: center;
     }
-    .circle{
-        width:45px;
-        height:45px;
-        border-radius: 45px;
-        border: 1px solid black;
-    }
     p{
         margin: 0px;
     }
-    .icons
-    {
+    #messages_text{
+        color: #91bbff
+    }
+    #notif_text{
+        color: white
+    }
+    .icons{
         width: 100%;
         height:100%;
+    }
+    .header_tab{
+        width: 24%;
+        height: 30%;
+        border: 1px solid;
+        border-radius: 2px;
+        border-color: #91bbff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }

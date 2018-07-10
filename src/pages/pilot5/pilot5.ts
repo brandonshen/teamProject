@@ -1,11 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { FeedPage } from '../feed/feed';
-import { HomePage } from '../home/home';
-import { SupportPage } from '../support/support';
 
 /**
- * Generated class for the FormsPage page.
+ * Generated class for the Pilot5Page page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -13,15 +10,16 @@ import { SupportPage } from '../support/support';
 
 @IonicPage()
 @Component({
-  selector: 'page-forms',
-  templateUrl: 'forms.html',
+  selector: 'page-pilot5',
+  templateUrl: 'pilot5.html',
 })
-export class FormsPage {
+export class Pilot5Page {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
+
   ionViewDidLoad() {
-    console.log('ionViewDidLoad FormsPage');
+    console.log('ionViewDidLoad Pilot5Page');
   }
 
 }
