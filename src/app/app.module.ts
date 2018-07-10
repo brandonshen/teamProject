@@ -12,6 +12,7 @@ import { SupportPage } from '../pages/support/support';
 import { ComponentsModule } from '../components/components.module';
 import { ProductsPilotPage } from '../pages/products-pilot/products-pilot';
 import { TicketPage } from '../pages/ticket/ticket';
+import { Camera } from '@ionic-native/camera';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { TicketPage } from '../pages/ticket/ticket';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Camera
   ]
 })
 export class AppModule {}

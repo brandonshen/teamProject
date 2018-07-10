@@ -18,11 +18,14 @@ export class TicketPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad TicketPage');
   }
   goBack(){
     this.navCtrl.pop();
   }
+
+    
 
 }

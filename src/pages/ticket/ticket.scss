@@ -91,6 +91,15 @@ page-ticket {
         flex-direction: column;
        
     }
+    #subjectBox{
+        display:flex;
+        flex-direction: column;
+        justify-content: center
+    }
+    #descriptionBox{
+        height: 40%;
+        width: 100%;
+    }
     .row{
         width: 80%;
         height: 30%;
@@ -99,31 +108,7 @@ page-ticket {
         background-color: lightgray;
         border: 1px solid black;
     }
-    .row2{
-        width: 350px;
-        height: 150px;
-        border: 1px solid black;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        align-content: center;
-        border-radius: 15px;
-    }
-    .box{
-       
-        height: 100%;
-        width: 45%;
-        border: 1px solid black;
-        display: flex;
-        border-radius: 25px;
-        box-shadow: 2px 2px 1px grey;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    
-        
-    }
+
     .hovercamText{
         color:white;
         font-size: 20px;
