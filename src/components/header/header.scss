@@ -54,13 +54,13 @@ header {
         height: 100%;
         width:0;
         position: fixed;
-        opacity: 0.8;
+        opacity: 1;
         top: 0;
         left: 0;
-        background-color: #111;
+        background-color: white;
         overflow-x: hidden;
-        padding-top: 60px;
         transition: 0.5s;
+        z-index: 2;
     }
     .sidenav .closebutton{
         position: absolute;
@@ -68,5 +68,47 @@ header {
         right: 25px;
         font-size: 36px;
         margin-left: 50px;
+    }
+    #sidenav_profilebox{
+        height: 100%;
+        width: 45%;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #sidenav_profile{
+        height: 80px;
+        width: 80px;
+
+    }
+    #sidenav_header{
+        height: 22.5%;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #sidenav_name{
+        height: 100%;
+        width: 55%;
+        border: 2px solid black;
+    }
+    #sidenav_name_name{
+        height: 50%;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4vw;
+    }
+    #sidenav_name_company{
+        height: 50%;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4vw;
+        overflow: auto;
     }
 }
