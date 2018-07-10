@@ -1,17 +1,9 @@
 <!-- Generated template for the HeaderComponent component -->
 <div id="header">
     <div id="profilebox">
-        
-        <div id="profile_circle" class= "overlay">
-            <img src="../../assets/icon/Icons/Header/avi.png" id="profile" class="closebutton" onclick="closeNav()">
-            <div class= "overlay-content">
-                About
-                Services
-                Clients
-                Contacts
-            </div>
+        <div id= "profile_circle">
+                <img src= "../../assets/icon/Icons/Header/avi.png" id= "profile" (click)="toggleMenu()">
         </div>
-        <span onclick= "openNav()">open</span>
     </div>
     <div id="spacebox">
     </div>
@@ -20,6 +12,13 @@
             <b>{{headerTitle}}</b>
         </h1>
     </div>
+</div>
+<div id="mySidenav" class="sidenav">
+        <a href= "javascript.:void(0)" class= "closebutton" (click)="toggleMenu()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
 </div>
 <div id="divider_box">
     <div id="divider">
