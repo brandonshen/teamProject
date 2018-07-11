@@ -7,7 +7,7 @@
 <ion-content>
   <div id="background">
 
-    <header [headerTitle]="'Submit A Ticket'">
+    <header [headerTitle]="'Support'">
 
     </header>
     <div id="arrowbox" (click)= "goBack()">
@@ -15,14 +15,13 @@
     </div>
     <div id="rows">
       <ion-list>
-          <ion-item id="sucjectBox">
-              <ion-label color="gray" stacked>Ticket Subject</ion-label>
-              <ion-input type="text" placeholder="Enter Text"></ion-input>
-            </ion-item>
-            <ion-item>
-                <ion-textarea placeholder="Enter a description"></ion-textarea>
-              </ion-item>
+      <ion-item id="subjectBox">
+          <ion-label color="gray" stacked>Ticket Subject</ion-label>
+          <ion-input type="text"placeholder="Enter Text"></ion-input>
+      </ion-item>
       </ion-list>
+      <textarea placeholder= "enter a description"id= "descriptionBox"></textarea>
+      <input type="file" accept="video/*" value="Submit a Video">
     </div>
     <footer>
         
