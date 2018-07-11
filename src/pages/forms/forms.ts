@@ -17,8 +17,11 @@ import { SupportPage } from '../support/support';
   templateUrl: 'forms.html',
 })
 export class FormsPage {
+  public page: string[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.page = new Array<string>();
+    this.page.push('forms');
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad FormsPage');
