@@ -30,7 +30,7 @@ export class HeaderComponent {
 
   toggleMenu() {
     if (this.menuIsVisible == false) {
-      document.getElementById("mySidenav").style.width="66%";
+      document.getElementById("mySidenav").style.width="75%";
       this.menuIsVisible = true;
       console.log("Menu toggle on");
     } else {
