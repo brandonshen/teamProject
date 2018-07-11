@@ -21,11 +21,21 @@ import { MessagesPage } from '../../pages/messages/messages';
 export class FooterComponent {
   @Input() currentPage : string[];
 
+  public product_path : string;
+  public forms_path : string;
+  public home_path : string;
+  public support_path : string;
+  public messages_path : string;
+
   text: string;
   
   constructor(public navCtrl: NavController) {
     console.log('Hello FooterComponent Component');
-    
+    this.product_path = '../../assets/icon/Icons/Bottom-row/products.png';
+    this.forms_path = '../../assets/icon/Icons/Bottom-row/forms.png';
+    this.home_path = '../../assets/icon/Icons/Bottom-row/home.png';
+    this.support_path = '../../assets/icon/Icons/Bottom-row/support.png';
+    this.messages_path = '../../assets/icon/Icons/Bottom-row/messages.png';
   }
 
   ngOnChanges(changes: any) {
@@ -44,7 +54,6 @@ export class FooterComponent {
     this.navCtrl.setRoot(HomePage,{},{animate: true, direction: 'forward'});
   }
   goToMessagesPage(){
-    console.log("The value of currentPage is: " + this.currentPage)
     this.navCtrl.setRoot(MessagesPage,{},{animate: true, direction: 'forward'});
   }   
   goToSupportPage(){
@@ -52,27 +61,28 @@ export class FooterComponent {
   }
 
   updateSelection() {
-    (<HTMLImageElement>document.getElementById("img_products")).src = "../../assets/icon/Icons/Bottom-row/products.png";
-    (<HTMLImageElement>document.getElementById("img_forms")).src = "../../assets/icon/Icons/Bottom-row/forms.png";
-    (<HTMLImageElement>document.getElementById("img_home")).src = "../../assets/icon/Icons/Bottom-row/home.png";
-    (<HTMLImageElement>document.getElementById("img_support")).src = "../../assets/icon/Icons/Bottom-row/support.png";
-    (<HTMLImageElement>document.getElementById("img_messages")).src = "../../assets/icon/Icons/Bottom-row/messages.png";
+
+    this.product_path = '../../assets/icon/Icons/Bottom-row/products.png';
+    this.forms_path = '../../assets/icon/Icons/Bottom-row/forms.png';
+    this.home_path = '../../assets/icon/Icons/Bottom-row/home.png';
+    this.support_path = '../../assets/icon/Icons/Bottom-row/support.png';
+    this.messages_path = '../../assets/icon/Icons/Bottom-row/messages.png';
 
     switch(this.currentPage[0]) {
       case 'products':
-        (<HTMLImageElement>document.getElementById("img_products")).src = "../../assets/icon/Icons/Bottom-row/products-dark.png";
+        this.product_path = '../../assets/icon/Icons/Bottom-row/products-dark.png';
         break;
       case 'forms':
-        (<HTMLImageElement>document.getElementById("img_forms")).src = "../../assets/icon/Icons/Bottom-row/forms-dark.png";
+        this.forms_path = '../../assets/icon/Icons/Bottom-row/forms-dark.png';
         break;
       case 'feed':
-        (<HTMLImageElement>document.getElementById("img_home")).src = "../../assets/icon/Icons/Bottom-row/home-dark.png";
+        this.home_path = '../../assets/icon/Icons/Bottom-row/home-dark.png';
         break;
       case 'support':
-        (<HTMLImageElement>document.getElementById("img_support")).src = "../../assets/icon/Icons/Bottom-row/support-dark.png";
+        this.support_path = '../../assets/icon/Icons/Bottom-row/support-dark.png';
         break;
       case 'messages':
-        (<HTMLImageElement>document.getElementById("img_messages")).src = "../../assets/icon/Icons/Bottom-row/messages-dark.png";
+        this.messages_path = '../../assets/icon/Icons/Bottom-row/messages-dark.png';
         break;
     }
   }
