@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SupportPage } from '../support/support';
 
 /**
  * Generated class for the TicketPage page.
@@ -23,7 +24,7 @@ export class TicketPage {
     console.log('ionViewDidLoad TicketPage');
   }
   goBack(){
-    this.navCtrl.pop();
+    this.navCtrl.setRoot(SupportPage,{},{animate: true, direction: 'back'});
   }
 
     

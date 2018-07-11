@@ -9,7 +9,69 @@
     <div id="header">
         <div class="profilebox">
             <div id="profile_circle_big">
-                <img src="../../assets/icon/Icons/Header/avi.png" id="profile_big">
+                <img src="../../assets/icon/Icons/Header/avi.png" id="profile_big" (click)="toggleMenu()">
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div id= "sidenav_header">
+                <div id= "sidenav_profilebox">
+                            <img src= "../../assets/icon/Icons/Menu/avi-large.png" id= "sidenav_profile" (click)="toggleMenu()">
+                </div>
+                <div id= "sidenav_name">
+                    <div id= "sidenav_name_name">
+                        Branricarl
+                    </div>
+                    <div id= "sidenav_name_company">
+                        Pathway Innovations and Technologies, inc.
+                    </div>
+                </div>    
+            </div>
+            <div id="divider_box">
+                    <div id="divider">
+                        
+                    </div>
+            </div>
+            <div id= "sidenav_body">
+                <div class= "sidenav_row">
+                    <div class= "sidenav_row_content">
+                        <div class= "sidenav_row_picturebox">
+                            <img src= "../../assets/icon/Icons/Menu/avi-small.png" class= "sidenav_row_picture">
+                        </div>
+                        <div class= "sidenav_row_text">
+                            Profile
+                        </div>
+                    </div>
+                </div>
+                <div class= "sidenav_row">
+                    <div class= "sidenav_row_content">
+                        <div class= "sidenav_row_picturebox">
+                            <img src= "../../assets/icon/Icons/Menu/messages.png" class= "sidenav_row_picture">
+                        </div>
+                        <div class= "sidenav_row_text">
+                            Messages
+                        </div>
+                    </div>
+                </div>
+                <div class= "sidenav_row">
+                    <div class= "sidenav_row_content">
+                        <div class= "sidenav_row_picturebox">
+                            <img src= "../../assets/icon/Icons/Home/search.png" class= "sidenav_row_picture">
+                        </div>
+                        <div class= "sidenav_row_text">
+                            Search
+                        </div>
+                    </div>
+                </div>
+                <div class= "sidenav_row">
+                    <div class= "sidenav_row_content">
+                        <div class= "sidenav_row_picturebox">
+                            <img src= "../../assets/icon/Icons/Menu/pricing.png" class= "sidenav_row_picture">
+                        </div>
+                        <div class= "sidenav_row_text">
+                            Pricing
+                        </div>
+                    </div>
+                </div>  
             </div>
         </div>
         <div id="header_container">
@@ -33,7 +95,7 @@
           </div>
       </div>
       <div id="arrowbox">
-          <img src="../../assets/icon/Icons/Header/backarrow.png" id="arrowimage">
+          <!-- <img src="../../assets/icon/Icons/Header/backarrow.png" id="arrowimage"> -->
       </div>
       <div id="rows_container">
           <b><scroll-item [supportBody]="'help is here'">

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { getQueryValue } from '@angular/core/src/view/query';
 
 /**
  * Generated class for the HeaderComponent component.

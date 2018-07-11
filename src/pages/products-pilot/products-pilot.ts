@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PilotxPage } from '../pilotx/pilotx';
 import { Pilot3Page } from '../pilot3/pilot3';
 import { Pilot5Page } from '../pilot5/pilot5';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the ProductsPilotPage page.
@@ -32,5 +33,8 @@ export class ProductsPilotPage {
   }
   goToPilot5Page(){
     this.navCtrl.setRoot(Pilot5Page);
+  }
+  goBack(){
+    this.navCtrl.setRoot(HomePage,{},{animate: true, direction: 'back'});
   }
 }

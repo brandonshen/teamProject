@@ -130,10 +130,10 @@ html{
         margin: 0px;
     }
     #messages_text{
-        color: #91bbff
+        color: #91bbff;
     }
     #notif_text{
-        color: white
+        color: white;
     }
     .icons{
         width: 100%;
@@ -148,6 +148,7 @@ html{
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
     .profilebox{
         width: 26%;
@@ -174,5 +175,93 @@ html{
         width: 50px;
         height: 50px;
         border-radius: 50px;
+    }
+    .sidenav{
+        height: 100%;
+        width:0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.5s;
+        z-index: 2;
+        white-space: nowrap;
+        
+    }
+    #sidenav_profilebox{
+        height: 100%;
+        width: 45%;
+        // border: 0.1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #sidenav_profile{
+        height: 90px;
+        width: 90px;
+        cursor: pointer;
+
+    }
+    #sidenav_header{
+        height: 22.5%;
+        // border: 0.1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #sidenav_name{
+        height: 100%;
+        width: 55%;
+        // border: 0.1px solid black;
+    }
+    #sidenav_name_name{
+        height: 50%;
+        // border: 0.1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        padding-top: 35%;
+        margin: 5px;
+    }
+    #sidenav_name_company{
+        height: 50%;
+        // border: 0.1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        padding-bottom: 12%;
+        white-space: normal;
+    }
+    #sidenav_body{
+        width: 100%;
+        height: 77.5%;
+        margin-top: 7.5%;
+
+    }
+    .sidenav_row{
+        width: 100%;
+        height: 20%;
+        margin-left: 10%;
+    }
+    .sidenav_row_content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .sidenav_row_picturebox{
+        width: 20%;
+        height: auto;
+    }
+    .sidenav_row_picture{
+        width: 30px;
+        height: 30px;
+    }
+    .sidenav_row_text{
+        width: 80%;
+        font-size: 25px;
     }
 }
