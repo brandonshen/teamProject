@@ -7,18 +7,24 @@
 <ion-content>
 <div id="background">
     <div id="header">
-        <div id="profile_circle">
-            <img src="../../assets/icon/Icons/Header/avi.png" id="profile">
+        <div class="profilebox">
+            <div id="profile_circle_big">
+                <img src="../../assets/icon/Icons/Header/avi.png" id="profile_big">
+            </div>
         </div>
-        <div class="header_tab" style="background-color:#91bbff" (click)="goToMessagesPage()">
-            <p id=messages_text>
+        <div id="header_container">
+            <div class="header_tab" style="background-color:#91bbff" (click)="goToMessagesPage()">
+                <p id=messages_text>
                 Messages
-            </p>
-        </div>
-        <div class="header_tab" (click)="goToNotificationsPage()">
-            <p id=notif_text>
+                </p>
+            </div>
+            <div class="header_tab" (click)="goToNotificationsPage()">
+                <p id=notif_text>
                 Notifications
-            </p>
+                </p>
+            </div>
+        </div>
+        <div class="profilebox">
         </div>
     </div>
     <div id="divider_box">
