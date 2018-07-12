@@ -9,7 +9,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * See https://angular.io/api/core/Component for more info on Angular
  * Components.
  */
-@IonicPage()
 @Component({
   selector: 'pilot',
   templateUrl: 'pilot.html'
@@ -20,8 +19,5 @@ export class PilotComponent {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     console.log('Hello PilotComponent Component');
-  }
-  goBack(){
-    this.navCtrl.setRoot(ProductsPilotPage,{},{animate: true, direction: 'forward'});
   }
 }
