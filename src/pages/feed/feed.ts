@@ -17,8 +17,11 @@ import { SupportPage } from '../support/support';
   templateUrl: 'feed.html',
 })
 export class FeedPage {
+  public page: string[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.page = new Array<string>();
+    this.page.push('feed');
   }
 
   ionViewDidLoad() {

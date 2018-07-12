@@ -17,9 +17,11 @@ import { NotificationsPage } from '../notifications/notifications';
 export class MessagesPage {
   public menuIsVisible: boolean;
   public listOfMessages : Array<number> = new Array(80);
+  public page: string[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    
+    this.page = new Array<string>();
+    this.page.push('messages');  
   }
 
   ionViewDidLoad() {

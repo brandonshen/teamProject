@@ -20,4 +20,7 @@ export class PilotComponent {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     console.log('Hello PilotComponent Component');
   }
+  goBack(){
+    this.navCtrl.setRoot(ProductsPilotPage,{},{animate: true, direction: 'back'});
+  }
 }

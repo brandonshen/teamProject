@@ -19,8 +19,11 @@ import { TicketPage } from '../ticket/ticket';
   templateUrl: 'support.html',
 })
 export class SupportPage {
+  public page: string[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.page = new Array<string>();
+    this.page.push('support');
   }
 
   ionViewDidLoad() {
