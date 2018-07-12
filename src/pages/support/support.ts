@@ -28,6 +28,10 @@ export class SupportPage {
   }
 
   goToTicketPage(){
-    this.navCtrl.push(TicketPage,{},{animate: true, direction: 'back'});
+     this.navCtrl.push(TicketPage,{},{animate: true, direction: 'back'});
+    
+  }
+  goBack(){
+    this.navCtrl.pop();
   }
 }

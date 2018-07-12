@@ -11,10 +11,12 @@ import { ProductsPilotPage } from '../products-pilot/products-pilot';
 })
 export class HomePage {
   public title: string = "";
+  public page: string = "";
 
   constructor(public navCtrl: NavController) {
     console.log("Home page instantiated");
     this.title=" Products ";
+    this.page="Products"
   }
   
   goToProductsPilotPage(){

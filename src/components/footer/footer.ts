@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, Directive, Input } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FeedPage } from '../../pages/feed/feed';
 import { FormsPage } from '../../pages/forms/forms';
@@ -19,11 +19,13 @@ import { MessagesPage } from '../../pages/messages/messages';
   templateUrl: 'footer.html',
 })
 export class FooterComponent {
-
+  @Input()
+  currentPage : string;
   text: string;
   
   constructor(public navCtrl: NavController) {
     console.log('Hello FooterComponent Component');
+    console.log("The value of the currentPage is" + this.currentPage);
   }
   goToFeedPage(){
     // this.navCtrl.push(FeedPage,{},{animate: true, direction: 'forward'});
@@ -40,5 +42,18 @@ export class FooterComponent {
   }   
   goToSupportPage(){
     this.navCtrl.setRoot(SupportPage,{},{animate: true, direction: 'forward'});
+  }
+
+  updateSelection(){
+    switch(this.currentPage){
+      case 'products':
+        break;
+      case 'forms':
+        break;
+      case 'feed':
+       break;
+      case 'support':
+       break;
+    }
   }
 }

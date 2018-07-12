@@ -114,53 +114,20 @@ page-ticket {
         color:white;
         font-size: 20px;
     }
-    #footer
-    {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right:0;
-        width:100%;
-        height:80px;
-        border: 1px solid black;
-        display: flex;
-    
-        
+    .buttonfile {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
     }
-    .circle_container{
-    
-        /* width: 60px;
-        height: 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: start; */
-        width: 20%;
-        height: 100%;
-       
-    }
-    .circle_box{
-        width: 100%;
-        height: 70%;
-        display: flex;
-        flex-direction:column;
-        justify-content: flex-end;
-        align-items: center;
-       
-    }
-    .label{
-        width:100%;
-        height:30%;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .circle{
-        width:45px;
-        height:45px;
-        border-radius: 45px;
-        border: 1px solid black;
+    .buttonfile + label {
+        font-size: 1.25em;
+        font-weight: 700;
+        color: gray;
+        background-color: white;
+        display: inline-block;
     }
     p{
         margin: 0px;
