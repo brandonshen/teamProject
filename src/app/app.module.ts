@@ -55,7 +55,11 @@ import { NotificationsPage } from '../pages/notifications/notifications';
   providers: [
     StatusBar,
     SplashScreen,
+<<<<<<< HEAD
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+=======
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
+>>>>>>> 5c2230f06e4cce1c57af2c0df32d65ea1dc62ccf
   ]
 })
 export class AppModule {}
