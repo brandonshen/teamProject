@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import { Component, Output, Directive, Input } from '@angular/core';
-=======
 import { Component, Output, Input } from '@angular/core';
->>>>>>> 5c2230f06e4cce1c57af2c0df32d65ea1dc62ccf
 import { NavController } from 'ionic-angular';
 import { FeedPage } from '../../pages/feed/feed';
 import { FormsPage } from '../../pages/forms/forms';
@@ -23,10 +19,6 @@ import { MessagesPage } from '../../pages/messages/messages';
   templateUrl: 'footer.html',
 })
 export class FooterComponent {
-<<<<<<< HEAD
-  @Input()
-  currentPage : string;
-=======
   @Input() currentPage : string[];
 
   public product_path : string;
@@ -35,14 +27,10 @@ export class FooterComponent {
   public support_path : string;
   public messages_path : string;
 
->>>>>>> 5c2230f06e4cce1c57af2c0df32d65ea1dc62ccf
   text: string;
   
   constructor(public navCtrl: NavController) {
     console.log('Hello FooterComponent Component');
-<<<<<<< HEAD
-    console.log("The value of the currentPage is" + this.currentPage);
-=======
     this.product_path = '../../assets/icon/Icons/Bottom-row/products.png';
     this.forms_path = '../../assets/icon/Icons/Bottom-row/forms.png';
     this.home_path = '../../assets/icon/Icons/Bottom-row/home.png';
@@ -53,7 +41,6 @@ export class FooterComponent {
   ngOnChanges(changes: any) {
     console.log(changes.currentPage.currentValue);
     this.updateSelection();
->>>>>>> 5c2230f06e4cce1c57af2c0df32d65ea1dc62ccf
   }
 
   goToFeedPage(){
@@ -73,18 +60,6 @@ export class FooterComponent {
     this.navCtrl.setRoot(SupportPage,{},{animate: true, direction: 'forward'});
   }
 
-<<<<<<< HEAD
-  updateSelection(){
-    switch(this.currentPage){
-      case 'products':
-        break;
-      case 'forms':
-        break;
-      case 'feed':
-       break;
-      case 'support':
-       break;
-=======
   updateSelection() {
 
     this.product_path = '../../assets/icon/Icons/Bottom-row/products.png';
@@ -109,7 +84,6 @@ export class FooterComponent {
       case 'messages':
         this.messages_path = '../../assets/icon/Icons/Bottom-row/messages-dark.png';
         break;
->>>>>>> 5c2230f06e4cce1c57af2c0df32d65ea1dc62ccf
     }
   }
 }

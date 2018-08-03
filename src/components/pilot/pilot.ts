@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { PilotxPage } from '../../pages/pilotx/pilotx';
+import { ProductsPilotPage } from '../../pages/products-pilot/products-pilot';
+import { NavController, NavParams } from 'ionic-angular';
 
 /**
  * Generated class for the PilotComponent component.
@@ -15,8 +17,10 @@ export class PilotComponent {
 
   text: string;
 
-  constructor() {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
     console.log('Hello PilotComponent Component');
-    this.text = 'Hello World';
+  }
+  goBack(){
+    this.navCtrl.setRoot(ProductsPilotPage,{},{animate: true, direction: 'forward'});
   }
 }

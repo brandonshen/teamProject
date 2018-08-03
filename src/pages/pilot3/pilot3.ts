@@ -21,5 +21,6 @@ export class Pilot3Page {
   ionViewDidLoad() {
     console.log('ionViewDidLoad Pilot3Page');
   }
+  
 
 }
