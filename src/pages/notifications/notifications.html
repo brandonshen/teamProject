@@ -98,11 +98,11 @@
           <!-- <img src="../../assets/icon/Icons/Header/backarrow.png" id="arrowimage"> -->
       </div>
       <div id="rows_container">
-          <b><scroll-item [supportBody]="'help is here'">
+<!--           <b><scroll-item [supportBody]="'help is here'">
   
-          </scroll-item></b>
+          </scroll-item></b> -->
   
-          <scroll-item *ngFor="let message of listOfNotifs">
+          <scroll-item *ngFor="let message of listOfNotifs1" [supportBody]="notif.Type">
           </scroll-item>
   
       </div>
