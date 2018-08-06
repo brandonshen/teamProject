@@ -93,11 +93,11 @@
         <!-- <img src="../../assets/icon/Icons/Header/backarrow.png" id="arrowimage"> -->
     </div>
     <div id="rows_container">
-        <scroll-item [supportTitle]="'Ticket'" [supportBody]="'My beans spilled'">
+        <!-- <scroll-item [supportTitle]="'Ticket'" [supportBody]="'My beans spilled'">
 
-        </scroll-item>
+        </scroll-item> -->
 
-        <scroll-item *ngFor="let message of listOfMessages">
+        <scroll-item *ngFor="let message of listOfMessages1" [supportTitle]="message.Name" [supportBody]="message.LastMessage">
         </scroll-item>
 
     </div>

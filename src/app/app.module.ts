@@ -16,6 +16,7 @@ import { Pilot5Page } from '../pages/pilot5/pilot5';
 import { MessagesPage } from '../pages/messages/messages';
 import { SupportPage } from '../pages/support/support';
 import { NotificationsPage } from '../pages/notifications/notifications';
+import { MessageProvider } from '../providers/message/message';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { NotificationsPage } from '../pages/notifications/notifications';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    MessageProvider
   ]
 })
 export class AppModule {}

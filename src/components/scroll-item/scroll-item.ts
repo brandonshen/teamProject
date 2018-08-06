@@ -13,7 +13,7 @@ import { Component, Input } from '@angular/core';
 export class ScrollItemComponent {
   @Input() supportTitle : string;
   @Input() supportBody : string;
-
+  
   text: string;
 
   constructor() {
