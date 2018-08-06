@@ -30,7 +30,7 @@ import { NotificationsPage } from '../pages/notifications/notifications';
     PilotxPage,
     Pilot3Page,
     Pilot5Page,
-    NotificationsPage
+    NotificationsPage,
   ],
   imports: [
     BrowserModule,

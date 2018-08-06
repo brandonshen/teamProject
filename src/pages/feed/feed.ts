@@ -4,12 +4,6 @@ import { FormsPage } from '../forms/forms';
 import { HomePage } from '../home/home';
 import { SupportPage } from '../support/support';
 
-/**
- * Generated class for the FeedPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
