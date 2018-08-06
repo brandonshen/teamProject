@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule, IonicFormInput } from 'ionic-angular';
 import { TicketPage } from './ticket';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -8,6 +9,7 @@ import { TicketPage } from './ticket';
   ],
   imports: [
     IonicPageModule.forChild(TicketPage),
+    FormsModule
   ],
 })
 export class TicketPageModule {}

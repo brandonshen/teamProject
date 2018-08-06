@@ -13,8 +13,17 @@
     <div id="arrowbox" (click)= "goBack()">
         <img src="../../assets/icon/Icons/Header/backarrow.png" id="arrowimage">
     </div>
-    <div id="rows">
-      <ion-list>
+    
+    <form id='hero'>
+        <label>
+          Name:
+          <input type='text' name='nameInput' autofocus placeholder='Your Super Hero Name' maxlength='32' required />
+        </label>
+      
+        <button type='submit' id='submit'>Submit</button>
+    </form>
+      
+      <!-- <ion-list>
       <ion-item id="subjectBox">
           <ion-label color="gray" stacked>Ticket Subject</ion-label>
           <ion-input type="text"placeholder="Enter Text"></ion-input>
@@ -24,10 +33,11 @@
         <ion-textarea placeholder= "enter a description"id= "descriptionBox" rows="10"></ion-textarea>
       </ion-item>
       </ion-list>
-    
+      <h1>{{subject}}</h1>
       <input type="file" accept="video/*" name="file" id="file" class="buttonfile">
-      <label for="file">Upload a Video</label>
-    </div>
+      <label for="file">Upload a Video</label> -->
+    
+  
     <footer>
         
     </footer>

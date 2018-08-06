@@ -17,6 +17,8 @@ import { MessagesPage } from '../pages/messages/messages';
 import { SupportPage } from '../pages/support/support';
 import { NotificationsPage } from '../pages/notifications/notifications';
 import { MessageProvider } from '../providers/message/message';
+import { TicketPageModule } from '../pages/ticket/ticket.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { MessageProvider } from '../providers/message/message';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    ComponentsModule  
+    ComponentsModule,
+    FormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

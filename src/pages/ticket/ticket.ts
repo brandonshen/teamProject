@@ -26,7 +26,7 @@ export class TicketPage {
   goBack(){
     this.navCtrl.setRoot(SupportPage,{},{animate: true, direction: 'back'});
   }
-
+  
     
 
 }
