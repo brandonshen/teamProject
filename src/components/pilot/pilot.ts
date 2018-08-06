@@ -1,8 +1,17 @@
 import { Component } from '@angular/core';
 import { PilotxPage } from '../../pages/pilotx/pilotx';
 import { ProductsPilotPage } from '../../pages/products-pilot/products-pilot';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
+<<<<<<< HEAD
+=======
+/**
+ * Generated class for the PilotComponent component.
+ *
+ * See https://angular.io/api/core/Component for more info on Angular
+ * Components.
+ */
+>>>>>>> 31eeafd190eb668a48dc85c4bb47a69b147ba5e8
 @Component({
   selector: 'pilot',
   templateUrl: 'pilot.html'
