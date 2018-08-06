@@ -21,6 +21,6 @@ export class PilotComponent {
     console.log('Hello PilotComponent Component');
   }
   goBack(){
-    this.navCtrl.setRoot(ProductsPilotPage,{},{animate: true, direction: 'forward'});
+    this.navCtrl.setRoot(ProductsPilotPage,{},{animate: true, direction: 'back'});
   }
 }

@@ -59,4 +59,3 @@ import { NotificationsPage } from '../pages/notifications/notifications';
   ]
 })
 export class AppModule {}
-  
