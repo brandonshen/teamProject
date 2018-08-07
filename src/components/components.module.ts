@@ -4,20 +4,17 @@ import { RedComponent } from './red/red';
 import { HeaderComponent } from './header/header';
 import { ScrollItemComponent } from './scroll-item/scroll-item';
 import { PilotComponent } from './pilot/pilot';
-import { FormComponent } from './form/form';
 @NgModule({
 	declarations: [FooterComponent,
     RedComponent,
     HeaderComponent,
     ScrollItemComponent,
-    PilotComponent,
-    FormComponent],
+    PilotComponent],
 	imports: [],
 	exports: [FooterComponent,
     RedComponent,
     HeaderComponent,
     ScrollItemComponent,
-    PilotComponent,
-    FormComponent]
+    PilotComponent]
 })
 export class ComponentsModule {}

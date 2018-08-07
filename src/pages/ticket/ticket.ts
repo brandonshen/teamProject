@@ -15,7 +15,7 @@ import { SupportPage } from '../support/support';
   templateUrl: 'ticket.html',
 })
 export class TicketPage {
-
+  ticket = {}
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -27,6 +27,9 @@ export class TicketPage {
     this.navCtrl.setRoot(SupportPage,{},{animate: true, direction: 'back'});
   }
   
+  sendTicket(){
+      console.log(this.ticket);
+  }
     
 
 }
