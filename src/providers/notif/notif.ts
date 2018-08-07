@@ -29,6 +29,14 @@ export class NotifProvider {
       {
         "Type" : "Aaron Nguyen",
         "Action" : "has joined the discord"
+      },
+      {
+        "Type" : "Eric Lu",
+        "Action" : "says to push to carl's branch"
+      },
+      {
+        "Type" : "Brandon",
+        "Action" : "will play fortnite later tonight"
       }
     ]`;
 
