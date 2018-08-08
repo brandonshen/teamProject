@@ -57,10 +57,7 @@ import { MessageProvider } from '../providers/message/message';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-<<<<<<< HEAD
     MessageProvider
-=======
->>>>>>> 31eeafd190eb668a48dc85c4bb47a69b147ba5e8
   ]
 })
 export class AppModule {}
