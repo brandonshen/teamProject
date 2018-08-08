@@ -17,6 +17,7 @@ import { MessagesPage } from '../pages/messages/messages';
 import { SupportPage } from '../pages/support/support';
 import { NotificationsPage } from '../pages/notifications/notifications';
 import { MessageProvider } from '../providers/message/message';
+import { NotifProvider } from '../providers/notif/notif';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { MessageProvider } from '../providers/message/message';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    MessageProvider
+    MessageProvider,
+    NotifProvider
   ]
 })
 export class AppModule {}

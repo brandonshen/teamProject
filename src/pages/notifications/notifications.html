@@ -91,11 +91,11 @@
       <div id="arrowbox">
       </div>
       <div id="rows_container">
-          <b><scroll-item [supportBody]="'help is here'">
+<!--           <b><scroll-item [supportBody]="'help is here'">
   
-          </scroll-item></b>
+          </scroll-item></b> -->
   
-          <scroll-item *ngFor="let message of listOfNotifs">
+          <scroll-item *ngFor="let notification of listOfNotifs1" [supportTitle]="notification.Type + ' ' " [supportTitle2]="notification.Action">
           </scroll-item>
   
       </div>
