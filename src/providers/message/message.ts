@@ -20,12 +20,12 @@ export class MessageProvider {
     var jsonData = `[
       {
         "Name" : "Young Thug", 
-        "LastMessage" : "Slime Season 3 is fucking lit",
+        "LastMessage" : "SS3",
         "Timestamp" : 1533269625
       },
       {
         "Name" : "Travis Scott",
-        "LastMessage" : "Astroworld out of this fucking world",
+        "LastMessage" : "ASTROWORLD",
         "Timestamp" : 1533284025
       },
       {
@@ -39,7 +39,7 @@ export class MessageProvider {
         "Timestamp" : 1533306645
       },
       {
-        "Name" : "Kanye Kardashian",
+        "Name" : "Kanye",
         "LastMessage" : "string",
         "Timestamp" : 1533317685
       },

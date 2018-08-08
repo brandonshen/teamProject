@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { MessagesPage } from '../messages/messages';
+import { NotifProvider } from '../../providers/notif/notif';
 /**
  * Generated class for the NotificationsPage page.
  *
@@ -15,9 +16,15 @@ import { MessagesPage } from '../messages/messages';
 })
 export class NotificationsPage {
   public menuIsVisible: boolean;
-  public listOfNotifs : Array<number> = new Array(80);
+  public listOfNotifs : Array<number> = new Array(5);
+  public listOfNotifs1 : any;
+  public page : string[];
+  notifications: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public notifProvider: NotifProvider) {
+    this.page = new Array<string>();
+    this.page.push('notifications');
+    this.listOfNotifs1 = this.notifProvider.getNotifsList();
   }
 
   ionViewDidLoad() {
