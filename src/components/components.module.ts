@@ -5,9 +5,9 @@ import { HeaderComponent } from './header/header';
 import { ScrollItemComponent } from './scroll-item/scroll-item';
 import { PilotComponent } from './pilot/pilot';
 import { GlyphiconComponent } from './glyphicon/glyphicon';
-
-import { FormComponent } from './form/form';
+// import { FormComponent } from './form/form';
 import { SlidesComponent } from './slides/slides';
+
 @NgModule({
 	declarations: [FooterComponent,
     RedComponent,
@@ -15,7 +15,8 @@ import { SlidesComponent } from './slides/slides';
     ScrollItemComponent,
     PilotComponent,
     GlyphiconComponent,
-    SlidesComponent],
+    SlidesComponent,
+    PilotComponent],
 	imports: [],
 	exports: [FooterComponent,
     RedComponent,
@@ -23,6 +24,7 @@ import { SlidesComponent } from './slides/slides';
     ScrollItemComponent,
     PilotComponent,
     GlyphiconComponent,
-    SlidesComponent]
+    SlidesComponent,
+    PilotComponent]
 })
 export class ComponentsModule {}

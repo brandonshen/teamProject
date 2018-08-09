@@ -3,66 +3,26 @@
     <header [headerTitle]= "'Pilot X'">
 
     </header>
-    <div id="rows">
-      <div class= "content_line2">
-        <div id="arrowbox">
-          <img src="../../assets/icon/Icons/Header/backarrow.png" id="arrowimage" (click)= "goBack()">
-        </div>
+    <!-- <pilot>
         <div id="glyphicon_arrow">
           <glyphicon></glyphicon>
         </div>
-      </div>
-      <div class= "content_line2">
-        <div class= "line_text">
-                
-      </div>
-    </div>
-    <!-- <div class= "content_line1">
-          <div class= "line_text">
-              Images
-          </div>
-    </div>
-    <div class= "content_line1">
-          <div class= "line_text">
-              Specifications
-          </div>
-    </div>
-    <div class= "content_line1">
-          <div class= "line_text">
-              Manual
-          </div>
-    </div>
-    <div class= "content_line1">
-          <div class= "line_text">
-              Quickstart Guide
-          </div>
-    </div>
-    <div class= "content_line1">
-      <div class= "line_text">
-              Videos
-      </div>
-    </div>
-    <div class= "content_line1">
-      <div class= "line_text">
-              Flyers
-      </div>
-    </div>
-    <div class= "content_line1">
-      <div class= "line_text">
-              Blog Posts
-      </div>
-    </div>
-    <div class= "content_line1">
-      <div class= "line_text">
-              Quote Request
-      </div>
-    </div>
-    <div class= "content_line1">
-      <div class= "line_text">
-              Purchase
-      </div>
-    </div>
-    </div> -->
+    </pilot> -->
+    <ion-slides #slider (ionSlideReachStart)="reachstart()" (ionSlideReachEnd)="reachend()">
+      <ion-slide>
+        <img src= "https://i.ytimg.com/vi/-ju7P9ebCd0/maxresdefault.jpg" style="width:100%; height:100%;">
+        Images
+      </ion-slide>
+      <ion-slide>
+        Manual
+      </ion-slide>
+      <ion-slide>
+        Quickstart Guide
+      </ion-slide>
+      <ion-slide>
+        Videos
+      </ion-slide>
+    </ion-slides>
     <footer>
 
     </footer>

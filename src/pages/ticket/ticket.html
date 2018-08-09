@@ -14,19 +14,21 @@
         <img src="../../assets/icon/Icons/Header/backarrow.png" id="arrowimage">
     </div>
     <div id="rows">
+      <form (ngSubmit)="sendTicket()">
       <ion-list>
       <ion-item id="subjectBox">
           <ion-label color="gray" stacked>Ticket Subject</ion-label>
-          <ion-input type="text"placeholder="Enter Text"></ion-input>
+          <ion-input type="text"placeholder="Enter Text"[(ngModel)]="ticket.subject"name="subject"></ion-input>
           
       </ion-item>
       <ion-item>
-        <ion-textarea placeholder= "enter a description"id= "descriptionBox" rows="10"></ion-textarea>
+        <ion-textarea placeholder= "enter a description"id= "descriptionBox" rows="10"[(ngModel)]="ticket.description"name="desscription"></ion-textarea>
       </ion-item>
       </ion-list>
-    
       <input type="file" accept="video/*" name="file" id="file" class="buttonfile">
       <label for="file">Upload a Video</label>
+      <button ion-button type="submit" block>submit ticket</button>
+    </form>
     </div>
     <footer>
         

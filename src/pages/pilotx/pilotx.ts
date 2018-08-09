@@ -17,4 +17,10 @@ export class PilotxPage {
     console.log('ionViewDidLoad PilotxPage');
   }
 
+  reachstart(){
+    console.log("yay things worked at the start");
+  }
+  reachend(){
+    console.log("yay things worked at the end");
+  }
 }
