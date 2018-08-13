@@ -84,6 +84,9 @@ export class FooterComponent {
       case 'messages':
         this.messages_path = '../../assets/icon/Icons/Bottom-row/messages-dark.png';
         break;
+      case 'notifications':
+        this.messages_path = '../../assets/icon/Icons/Bottom-row/messages-dark.png';
+        break;
     }
   }
 }
