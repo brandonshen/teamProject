@@ -97,7 +97,7 @@
 
         </scroll-item> -->
 
-        <scroll-item *ngFor="let message of listOfMessages1" [supportTitle]="message.Name" [supportBody]="message.LastMessage">
+        <scroll-item *ngFor="let message of listOfMessages1" [supportTitle]="message.Name" [supportBody]="message.LastMessage" [embeddedIn]="'messages'">
         </scroll-item>
 
     </div>

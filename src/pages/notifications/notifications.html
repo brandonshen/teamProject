@@ -102,7 +102,7 @@
   
           </scroll-item></b> -->
   
-          <scroll-item *ngFor="let notification of listOfNotifs1" [supportTitle]="notification.Type + ' ' " [supportTitle2]="notification.Action">
+          <scroll-item *ngFor="let notification of listOfNotifs1" [supportTitle]="notification.Type + ' ' " [supportTitle2]="notification.Action" [embeddedIn]="'notifications'">
           </scroll-item>
   
       </div>

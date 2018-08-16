@@ -20,8 +20,7 @@ import { MessageProvider } from '../providers/message/message';
 import { TicketPageModule } from '../pages/ticket/ticket.module';
 import { FormsModule } from '@angular/forms';
 import { NotifProvider } from '../providers/notif/notif';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireStorageModule } from 'angularfire2/storage'
+import { MessageshistoryPage } from '../pages/messageshistory/messageshistory'
 
 @NgModule({
   declarations: [
@@ -36,20 +35,14 @@ import { AngularFireStorageModule } from 'angularfire2/storage'
     PilotxPage,
     Pilot3Page,
     Pilot5Page,
-    NotificationsPage
+    NotificationsPage,
+    MessageshistoryPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     ComponentsModule,
     FormsModule,
-    AngularFireModule.initializeApp({
-      apiKey: "AIzaSyAgBEqp6VQnBDK5hZ-IBAsjRQKcQJvcSdw",
-      authDomain: "hovercam-n1g3r.firebaseapp.com",
-      storageBucket: "hovercam-n1g3r.appspot.com",
-      projectId: "hovercam-n1g3r",
-    }),
-    AngularFireStorageModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -65,6 +58,7 @@ import { AngularFireStorageModule } from 'angularfire2/storage'
     Pilot3Page,
     Pilot5Page,
     NotificationsPage,
+    MessageshistoryPage
   ],
   providers: [
     StatusBar,
