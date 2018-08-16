@@ -31,6 +31,6 @@ export class SupportPage {
   }
 
   goToTicketPage(){
-    this.navCtrl.setRoot(TicketPage,{},{animate: true, direction: 'back'});
+    this.navCtrl.setRoot(TicketPage,{},{animate: true, direction: 'forward'});
   }
 }

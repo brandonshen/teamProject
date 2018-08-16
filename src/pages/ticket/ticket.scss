@@ -94,7 +94,6 @@ page-ticket {
         height: calc(100% - 200px)    ;
         display: flex;
         flex-direction: column;
-        border: 1px solid red;
        
     }
 
@@ -109,9 +108,12 @@ page-ticket {
         justify-content: center;
     }
     #descriptionBox{
+        height: calc(100% - 122px);
+        width: 100%;
         display:flex;
         // flex-direction: column;
         justify-content: center;
+        padding: 10px;
     }
     .row{
         width: 80%;
@@ -137,7 +139,6 @@ page-ticket {
     .buttonfile + label {
         font-size: 1.25em;
         font-weight: 700;
-        color: gray;
         background-color: white;
         display: inline-block;
     }
@@ -149,5 +150,6 @@ page-ticket {
         width: 100%;
         height:100%;
     }
+
 
 }

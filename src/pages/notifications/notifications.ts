@@ -31,11 +31,9 @@ export class NotificationsPage {
     console.log('ionViewDidLoad NotificationsPage');
   }
   goToMessagesPage(){
-    this.navCtrl.setRoot(MessagesPage,{},{animate: true, direction: 'forward'});
+    this.navCtrl.setRoot(MessagesPage,{},{animate: true, direction: 'back'});
   }
-  goToNotificationsPage(){
-    this.navCtrl.setRoot(NotificationsPage,{},{animate: true, direction: 'forward'});
-  }
+  
   toggleMenu() {
     if (this.menuIsVisible == false) {
       document.getElementById("mySidenav").style.width="75%";

@@ -18,8 +18,10 @@ import { HomePage } from '../home/home';
   templateUrl: 'products-pilot.html',
 })
 export class ProductsPilotPage {
-
+  public page: string[];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.page = new Array<string>();
+    this.page.push('productspilot');
   }
 
   ionViewDidLoad() {

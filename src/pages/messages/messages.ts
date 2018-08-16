@@ -34,9 +34,7 @@ export class MessagesPage {
     console.log('ionViewDidLoad MessagesPage');
     
   }
-  goToMessagesPage(){
-    this.navCtrl.setRoot(MessagesPage,{},{animate: true, direction: 'forward'});
-  }
+  
   goToNotificationsPage(){
     this.navCtrl.setRoot(NotificationsPage,{},{animate: true, direction: 'forward'});
   }
