@@ -20,7 +20,11 @@ import { MessageProvider } from '../providers/message/message';
 import { TicketPageModule } from '../pages/ticket/ticket.module';
 import { FormsModule } from '@angular/forms';
 import { NotifProvider } from '../providers/notif/notif';
-
+import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
+import { File } from '@ionic-native/file';
+import { Camera } from '@ionic-native/camera'
+import { MediaCapture } from '@ionic-native/media-capture'
+ 
 @NgModule({
   declarations: [
     MyApp,
@@ -62,7 +66,12 @@ import { NotifProvider } from '../providers/notif/notif';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     MessageProvider,
-    NotifProvider
+    NotifProvider,
+    FileTransfer,
+    FileTransferObject,
+    File,
+    Camera,
+    MediaCapture
   ]
 })
 export class AppModule {}

@@ -21,7 +21,7 @@ export class ProductsPilotPage {
   public page: string[];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.page = new Array<string>();
-    this.page.push('productspilot');
+    this.page.push('products');
   }
 
   ionViewDidLoad() {

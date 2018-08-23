@@ -15,16 +15,19 @@
     </div>
     <div id="rows">
       <form [formGroup]="ticket"(ngSubmit)="sendTicket()">
-      <ion-list>
+      
       <ion-item id="subjectBox">
           <ion-label color="gray" stacked>Ticket Subject</ion-label>
           <ion-input type="text"placeholder="Enter Text"name="subject"formControlName="subject"></ion-input>
           
       </ion-item>
-      
-      </ion-list>
       <textarea id="descriptionBox" placeholder="enter a description..."formControlName="description"></textarea>
-      <button ion-button type="submit" [disabled]="!ticket.valid"block>submit ticket</button>
+    <ion-item>
+      <p>{{imageURL}}</p>
+      <button ion-button type="button" id="recorderButton" color="secondary"(click)="captureVideo()">Record a Video</button>
+    </ion-item>
+
+      <button ion-button type="submit"  [disabled]="!ticket.valid"block>submit ticket</button>
     </form>
     </div>
     <footer>

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the PilotxPage page.
+ * Generated class for the VideoPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-pilotx',
-  templateUrl: 'pilotx.html',
+  selector: 'page-video',
+  templateUrl: 'video.html',
 })
-export class PilotxPage {
-  public page: string[];
+export class VideoPage {
+  yourVideo = document.getElementById("yourVideo");
+  friendsVideo = document.getElementById("friendsVideo");
+  yourId = Math.floor(Math.random()*1000000000);
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.page = new Array<string>();
-    this.page.push('products');
   }
+
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PilotxPage');
+    console.log('ionViewDidLoad VideoPage');
   }
+
 }
